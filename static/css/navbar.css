@@ -1,0 +1,30 @@
+body { padding-top: 70px; }
+
+.mf-nav {
+	text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+background-color: #563d7c;
+border-color: #463265;
+box-shadow: 0 1px 0 rgba(255,255,255,.1);
+}
+
+
+.mf-nav .navbar-toggle {
+border-color: #563d7c;
+}
+
+.mf-nav .navbar-brand {
+color: #fff;
+}
+
+.mf-nav .navbar-collapse {
+border-color: #463265;
+}
+
+.mf-nav .navbar-nav > li > a {
+color: #cdbfe3;
+}
+
+.mf-nav .navbar-nav > .active > a, .mf-nav .navbar-nav > .active > a:hover {
+color: #fff;
+background-color: #463265;
+}
