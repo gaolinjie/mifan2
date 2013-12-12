@@ -14,3 +14,20 @@ outline: 0;
 font-size: 100%;
 background: transparent;
 }
+
+a:hover {
+text-decoration: none;
+}
+
+.row {
+margin-right: 0;
+margin-left: 0;
+}
+
+.md-8, .col-xs-12, .col-md-4, .col-xs-6 {
+padding-left: 0;
+}
+
+.navbar-nav.navbar-right:last-child {
+margin-right: 0;
+}
