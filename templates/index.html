@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BuzzFeed</title>
+  <title>米饭</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
@@ -38,7 +38,7 @@
           <li>
             <a href="../css">娱乐</a>
           </li>
-          <li class="active">
+          <li>
             <a href="../components">生活</a>
           </li>
           <li>
@@ -63,13 +63,13 @@
         <div class="col-xs-12 col-md-8">
           <div id="splash_01" class="overlay-style no-touch">
             <div class="featured-splash">
-              <a id="splash-link" href="http://buzzfeed.com/ellievhall/the-45-most-powerful-photos-of-2013">
+              <a id="splash-link" href="#">
                 <div id="splash-container">
-                  <img id="splash-image" src="http://s3-ec.buzzfed.com/static/2013-12/enhanced/webdr07/11/19/enhanced-buzz-13748-1386809923-12.jpg" alt="">
-                  <div class="top left splash-overlay" id="splash-overlay">
+                  <img id="splash-image" src="{{ head1[0].cover }}" alt="">
+                  <div class="top right splash-overlay" id="splash-overlay">
                     <div class="label">伟大的失望</div>
-                    <div class="title light-text-on-dark-image" style="font-size: 36px; line-height: 36px;">
-                      <div class="splash-desc">23个最大的电影和电视令人失望的2013</div>
+                    <div class="title dark-text-on-light-image" style="font-size: 36px; line-height: 36px;">
+                      <div class="splash-desc">{{ head1[0].title }}</div>
                     </div>
                   </div>
                 </div>
@@ -80,19 +80,19 @@
         <div class="col-xs-6 col-md-4">
           <div class="splash_dfp_story" id="splash_big_story">
 
-            <a href="http://www.buzzfeed.com/samsunggalaxy/the-12-cats-of-chrismahanukwanzakah-lil-bub" class="bf-url">
-              <img class="flex-wide-thumb bf-image-bigstory campaign-wide-thumb" src="http://s3-ak.buzzfeed.com/static/2013-12/campaign_images/webdr03/4/10/the-12-cats-of-chrismahanukwanzakah-lil-bub-1-5595-1386171688-26_wide.jpg" width="300" height="106"></a>
+            <a href="#" class="bf-url">
+              <img class="flex-wide-thumb bf-image-bigstory campaign-wide-thumb" src="{{ head2[0].cover }}" width="300" height="106"></a>
             <h2 class="bf-item-title">
-              <a href="http://www.buzzfeed.com/samsunggalaxy/the-12-cats-of-chrismahanukwanzakah-lil-bub" class="bf-url bf-name">11级的胜利舞蹈</a>
+              <a href="#" class="bf-url bf-name">{{ head2[0].title }}</a>
             </h2>
 
             <div class="big-meta">
               <div class="bf-user-info user-info">
-                <a href="http://www.buzzfeed.com/samsunggalaxy" class="bf-user-url">
+                <a href="#" class="bf-user-url">
                   <img class="bf-user_image_large" src="http://s3-ak.buzzfed.com/static/2013-11/user_images/webdr01/5/15/akwarren2-2114-1383683457-33_large.jpg" width="35" height="35"></a>
                 <div class="label bf-byline_prefix">PRESENTED BY</div>
                 <div class="username">
-                  <a rel:gt_act="dfp/username" href="http://www.buzzfeed.com/samsunggalaxy" class="bf-user-url bf-display_name">第一资本水银</a>
+                  <a rel:gt_act="dfp/username" href="#" class="bf-user-url bf-display_name">第一资本水银</a>
                 </div>
               </div>
             </div>
@@ -114,477 +114,36 @@
             <div class="section">
             <div class="content">
             <ul class="std-posts" id="page_flow">
+            {% for std in stds.list %}
             <li id="post-2817669" class=" post track bf_dom first  has-like-button bf_cts-1-1 bf_cts  scrolled_past">
               <article>
                 <header>
                   <div class="thumb-unit bf_dom">
-                    <a href="/krisandres/the-2013-most-trending-domestic-music-videos-on-yo-6qn0">
+                    <a href="#">
                       <div style="position:relative;">
-                        <img class="thumb bf_dom " style="" src="http://s3-ak.buzzfeed.com/static/2013-12/campaign_images/webdr07/11/13/the-2013-top-trending-music-videos-on-youtube-in--1-30363-1386788075-2.jpg" width="125" height="83" alt="">
+                        <img class="thumb bf_dom " style="" src="{{ std.cover }}" width="125" height="83" alt="">
                       </div>
                     </a>
                   </div>
                   <hgroup>
-                    <h2 class="" style=""><a href="/krisandres/the-2013-most-trending-domestic-music-videos-on-yo-6qn0">2013年热门趋势音乐视频在YouTube上在不同的国家</a></h2>
+                    <h2 class="" style=""><a href="#">{{ std.title }}</a></h2>
                   </hgroup>
                 </header>
                 <p class="description " style="">
-                  <b>因为世界上大多数国家不关心PSY，麦莉和凯蒂·佩里。</b>
+                  <b>{{ std.intro }}</b>
                 </p>
                 <p class="small-meta">
                   <span class="generic-image icon"></span>
-                  <a class="username notranslate" href="/krisandres">Kris Andres</a>
-                  <span class="time-image icon"></span><span class="time-ago">一个小时前</span>
-                  <a href="/krisandres/the-2013-most-trending-domestic-music-videos-on-yo-6qn0#responses" class="responses">
+                  <a class="username notranslate" href="#">{{ std.author_username }}</a>
+                  <span class="time-image icon"></span><span class="time-ago">{{ std.created|pretty_date }}</span>
+                  <a href="#" class="responses">
                     <span class="response-image icon"></span>
-                    <span class="num">2</span> 回应
+                    <span class="num">{{ std.comment_count }}</span> 回应
                   </a>
                 </p>
               </article>
             </li>
-
-            <li rel:gt_cat="[ttp]:feedtop5" id="post-2813813" class=" post track bf_dom   has-like-button bf_cts-1-2 bf_cts  scrolled_past" rel:bf_cts="1:2:2813813:buzz" rel:ptool="true" rel:advertiser="0" rel:partner="0" rel:owner="mbvd" rel:data="{&quot;buzz_id&quot;:&quot;2813813&quot;,&quot;type&quot;:&quot;super&quot;,&quot;uri&quot;:&quot;sacred-native-american-masks-auctioned-despite-plea-from-tri&quot;,&quot;form_id&quot;:&quot;20&quot;,&quot;verticals&quot;:[&quot;Breaking&quot;,&quot;UKFrontPageFlow&quot;,&quot;&quot;],&quot;category&quot;:&quot;Breaking&quot;}">
- <article>
-    <header>
-  
-    
-    <div class="thumb-unit bf_dom">
-      
-        
-          <a rel:gtrack_id="post/photo" rel:gt_act="post/thumb" rel:gt_label="editor/mbvd" rel:gt_click="1" href="/mbvd/sacred-native-american-masks-auctioned-despite-plea-from-tri">
-        
-      
-
-      
-      
-
-        
-  <div style="position:relative;">
-   <img class="thumb bf_dom " style="" src="http://s3-ak.buzzfeed.com/static/2013-12/campaign_images/webdr07/11/22/us-charity-buys-sacred-native-american-masks-for--1-4413-1386820762-12.jpg" width="125" height="83" alt="">
-    
-  </div>
-  
-
-
-            
-        </a>
-      
-    </div>
-
-  <hgroup>
-    
-      <h2 class="" style=""><a rel:gtrack_id="post/title" rel:gt_act="post/title" rel:gt_label="editor/mbvd" rel:gt_click="2" href="/mbvd/sacred-native-american-masks-auctioned-despite-plea-from-tri"><font><font class="">美国慈善买进神圣的美洲土著面具530000美元要返回部落</font></font></a></h2>
-  </hgroup>
-  
-  </header>
-
-  
-  
-  
-            <p class="description " style="">
-     <b><font><font>一位法国拍卖行忽略这两个部落的要求和美国大使馆的呼吁推迟神圣的美洲土著面具拍卖和出售他们周一160万美元。</font></font></b>
-     
-        </p>
-   
-  
-
-      
-
-
-
-
-<p class="small-meta">
-  
-    <span class="generic-image icon"></span>
-    <a rel:gtrack_id="post/meta/user/name" rel:gt_act="post/username" rel:gt_label="editor/mbvd" rel:gt_click="3" class="username notranslate" href="/mbvd">Michelle Broder Van Dyke</a>
-  
-    <span class="time-image icon"></span><span class="time-ago"><font><font>半小时前</font></font></span>
-  
-  
-            <a rel:gtrack_id="post/meta/responses/responses" rel:gt_act="post/responses" rel:gt_label="editor/mbvd" rel:gt_click="3" href="/mbvd/sacred-native-american-masks-auctioned-despite-plea-from-tri#responses" class="responses">
-        <span class="response-image icon"></span>
-        <span class="num"><font><font>146</font></font></span><font><font>回应
-      </font></font></a>  
-  
-  
-</p>
-  
-  
-
-  
-  
-  
- </article>
-</li>
-
-<li rel:gt_cat="[ttp]:feed" id="post-2818868" class=" post track bf_dom   has-like-button bf_cts-1-10 bf_cts  scrolled_past" rel:bf_cts="1:10:2818868:buzz" rel:ptool="true" rel:advertiser="0" rel:partner="0" rel:owner="mattlynley" rel:data="{&quot;buzz_id&quot;:&quot;2818868&quot;,&quot;type&quot;:&quot;super&quot;,&quot;uri&quot;:&quot;bill-gates-top-7-books-in-2013&quot;,&quot;form_id&quot;:&quot;20&quot;,&quot;verticals&quot;:[&quot;Books&quot;,&quot;BooksPageSplash&quot;,&quot;Business&quot;,&quot;BusinessFeature&quot;,&quot;Tech&quot;,&quot;UKFrontPageFlow&quot;,&quot;&quot;],&quot;category&quot;:&quot;Business&quot;}">
- <article>
-    <header>
-  
-    
-    <div class="thumb-unit bf_dom">
-      
-        
-          <a rel:gtrack_id="post/photo" rel:gt_act="post/thumb" rel:gt_label="editor/mattlynley" rel:gt_click="1" href="/mattlynley/bill-gates-top-7-books-in-2013">
-        
-      
-
-      
-      
-
-        
-  <div style="position:relative;">
-   <img class="thumb bf_dom " style="" rel:bf_bucket="progload" src="http://s3-ak.buzzfeed.com/static/2013-12/campaign_images/webdr06/11/17/bill-gates-top-7-books-in-2013-1-14998-1386800697-15.jpg" width="125" height="83" alt="" rel:bf_image_src="/static/2013-12/campaign_images/webdr06/11/17/bill-gates-top-7-books-in-2013-1-14998-1386800697-15.jpg">
-      
-  </div>
-  
-
-
-            
-        </a>
-      
-    </div>
-
-  <hgroup>
-    
-      <h2 class="" style=""><a rel:gtrack_id="post/title" rel:gt_act="post/title" rel:gt_label="editor/mattlynley" rel:gt_click="2" href="/mattlynley/bill-gates-top-7-books-in-2013"><font><font>比尔·盖茨的前7图书2013年</font></font></a></h2>
-  </hgroup>
-  
-  </header>
-
-  
-  
-  
-            <p class="description " style="">
-     <b><font><font>世界上最富有的人了微软联合创始人和一个列出了他最喜欢读的一年。</font></font></b><font><font>注意：不是所有的人都出来了，2013年。
-     
-        </font></font></p>
-   
-  
-
-      
-
-
-
-
-<p class="small-meta">
-  
-    <span class="generic-image icon"></span>
-    <a rel:gtrack_id="post/meta/user/name" rel:gt_act="post/username" rel:gt_label="editor/mattlynley" rel:gt_click="3" class="username notranslate" href="/mattlynley">Matthew Lynley</a>
-  
-    <span class="time-image icon"></span><span class="time-ago"><font><font>3小时前</font></font></span>
-  
-  
-            <a rel:gtrack_id="post/meta/responses/responses" rel:gt_act="post/responses" rel:gt_label="editor/mattlynley" rel:gt_click="3" href="/mattlynley/bill-gates-top-7-books-in-2013#responses" class="responses">
-        <span class="response-image icon"></span>
-        <span class="num"><font><font>15</font></font></span><font><font>回应
-      </font></font></a>  
-  
-  
-</p>
-  
-  
-
-  
-  
-  
- </article>
-</li>
-
-<li rel:gt_cat="[ttp]:feed" id="post-2818584" class=" post track bf_dom   has-like-button bf_cts-1-11 bf_cts  scrolled_past" rel:bf_cts="1:11:2818584:buzz" rel:ptool="true" rel:advertiser="0" rel:partner="0" rel:owner="leonoraepstein" rel:data="{&quot;buzz_id&quot;:&quot;2818584&quot;,&quot;type&quot;:&quot;super&quot;,&quot;uri&quot;:&quot;questions-elf-left-unanswered&quot;,&quot;form_id&quot;:&quot;20&quot;,&quot;verticals&quot;:[&quot;Entertainment&quot;,&quot;Rewind&quot;,&quot;UKFrontPageFlow&quot;,&quot;&quot;],&quot;category&quot;:&quot;Rewind&quot;}">
- <article>
-    <header>
-  
-    
-    <div class="thumb-unit bf_dom">
-      
-        
-          <a rel:gtrack_id="post/photo" rel:gt_act="post/thumb" rel:gt_label="editor/leonoraepstein" rel:gt_click="1" href="/leonoraepstein/questions-elf-left-unanswered">
-        
-      
-
-      
-      
-
-        
-  <div style="position:relative;">
-   <img class="thumb bf_dom " style="" rel:bf_bucket="progload" src="http://s3-ak.buzzfeed.com/static/2013-12/campaign_images/webdr05/11/16/17-questions-elf-left-unanswered-1-32007-1386796595-9.jpg" width="125" height="83" alt="" rel:bf_image_src="/static/2013-12/campaign_images/webdr05/11/16/17-questions-elf-left-unanswered-1-32007-1386796595-9.jpg">
-      
-  </div>
-  
-
-
-            
-        </a>
-      
-    </div>
-
-  <hgroup>
-    
-      <h2 class="" style=""><a rel:gtrack_id="post/title" rel:gt_act="post/title" rel:gt_label="editor/leonoraepstein" rel:gt_click="2" href="/leonoraepstein/questions-elf-left-unanswered"><font><font class="">17问“小精灵”左未答复</font></font></a></h2>
-  </hgroup>
-  
-  </header>
-
-  
-  
-  
-            <p class="description " style="">
-     <b><font><font>一个人如何成长为节食糖浆和糖果玉米的健康成年男性？</font></font></b>
-     
-        </p>
-   
-  
-
-      
-
-
-
-
-<p class="small-meta">
-  
-    <span class="generic-image icon"></span>
-    <a rel:gtrack_id="post/meta/user/name" rel:gt_act="post/username" rel:gt_label="editor/leonoraepstein" rel:gt_click="3" class="username notranslate" href="/leonoraepstein">Leonora Epstein</a>
-  
-    <span class="time-image icon"></span><span class="time-ago"><font><font>3小时前</font></font></span>
-  
-  
-            <a rel:gtrack_id="post/meta/responses/responses" rel:gt_act="post/responses" rel:gt_label="editor/leonoraepstein" rel:gt_click="3" href="/leonoraepstein/questions-elf-left-unanswered#responses" class="responses">
-        <span class="response-image icon"></span>
-        <span class="num"><font><font>40</font></font></span><font><font>回应
-      </font></font></a>  
-  
-  
-</p>
-  
-  
-
-  
-  
-  
- </article>
-</li>
-<li rel:gt_cat="[ttp]:feed" id="post-2815930" class=" post track bf_dom   has-like-button bf_cts-1-14 bf_cts  scrolled_past" rel:bf_cts="1:14:2815930:buzz" rel:ptool="true" rel:advertiser="0" rel:partner="0" rel:owner="kristinchirico" rel:data="{&quot;buzz_id&quot;:&quot;2815930&quot;,&quot;type&quot;:&quot;super-image&quot;,&quot;uri&quot;:&quot;10-signs-your-teams-season-has-gone-to-hell&quot;,&quot;form_id&quot;:&quot;24&quot;,&quot;verticals&quot;:[&quot;Sports&quot;,&quot;&quot;],&quot;category&quot;:&quot;Sports&quot;}">
- <article>
-    <header>
-  
-    
-    <div class="thumb-unit bf_dom">
-      
-        
-          <a rel:gtrack_id="post/photo" rel:gt_act="post/thumb" rel:gt_label="editor/kristinchirico" rel:gt_click="1" href="/kristinchirico/10-signs-your-teams-season-has-gone-to-hell">
-        
-      
-
-      
-      
-
-        
-  <div style="position:relative;">
-   <img class="thumb bf_dom " style="" rel:bf_bucket="progload" src="http://s3-ak.buzzfeed.com/static/2013-12/campaign_images/webdr07/11/16/10-signs-your-teams-season-has-gone-to-hell-1-21063-1386797000-17.jpg" width="125" height="83" alt="" rel:bf_image_src="/static/2013-12/campaign_images/webdr07/11/16/10-signs-your-teams-season-has-gone-to-hell-1-21063-1386797000-17.jpg">
-      
-  </div>
-  
-
-
-            
-        </a>
-      
-    </div>
-
-  <hgroup>
-    
-      <h2 class="" style=""><a rel:gtrack_id="post/title" rel:gt_act="post/title" rel:gt_label="editor/kristinchirico" rel:gt_click="2" href="/kristinchirico/10-signs-your-teams-season-has-gone-to-hell"><font><font>10标志你的团队的季节已经到地狱</font></font></a></h2>
-  </hgroup>
-  
-  </header>
-
-  
-  
-  
-            <p class="description " style="">
-     <b><font><font>有你的季节去世应对可能是一个艰难的时刻。</font></font></b>
-     
-        </p>
-   
-  
-
-      
-
-
-
-
-<p class="small-meta">
-  
-    <span class="generic-image icon"></span>
-    <a rel:gtrack_id="post/meta/user/name" rel:gt_act="post/username" rel:gt_label="editor/kristinchirico" rel:gt_click="3" class="username notranslate" href="/kristinchirico">Kristin Chirico</a>
-  
-    <span class="time-image icon"></span><span class="time-ago"><font><font>2小时前</font></font></span>
-  
-  
-            <a rel:gtrack_id="post/meta/responses/responses" rel:gt_act="post/responses" rel:gt_label="editor/kristinchirico" rel:gt_click="3" href="/kristinchirico/10-signs-your-teams-season-has-gone-to-hell#responses" class="responses">
-        <span class="response-image icon"></span>
-        <span class="num"><font><font>10</font></font></span><font><font>回应
-      </font></font></a>  
-  
-  
-</p>
-  
-  
-
-  
-  
-  
- </article>
-</li>
-
-<li rel:gt_cat="[ttp]:feed" id="post-2818925" class=" post track bf_dom   has-like-button bf_cts-1-15 bf_cts  scrolled_past" rel:bf_cts="1:15:2818925:buzz" rel:ptool="true" rel:advertiser="0" rel:partner="0" rel:owner="kmallikarjuna" rel:data="{&quot;buzz_id&quot;:&quot;2818925&quot;,&quot;type&quot;:&quot;super-image&quot;,&quot;uri&quot;:&quot;so-theres-a-new-original-character-in-mockingjay&quot;,&quot;form_id&quot;:&quot;24&quot;,&quot;verticals&quot;:[&quot;Entertainment&quot;,&quot;Geeky&quot;,&quot;UKFrontPageFlow&quot;,&quot;&quot;],&quot;category&quot;:&quot;Geeky&quot;}">
- <article>
-    <header>
-  
-    
-    <div class="thumb-unit bf_dom">
-      
-        
-          <a rel:gtrack_id="post/photo" rel:gt_act="post/thumb" rel:gt_label="editor/kmallikarjuna" rel:gt_click="1" href="/kmallikarjuna/so-theres-a-new-original-character-in-mockingjay">
-        
-      
-
-      
-      
-
-        
-  <div style="position:relative;">
-   <img class="thumb bf_dom " style="" rel:bf_bucket="progload" src="http://s3-ak.buzzfeed.com/static/2013-12/campaign_images/webdr01/11/16/so-theres-a-new-original-character-in-mockingjay-1-19917-1386799086-8.jpg" width="125" height="83" alt="" rel:bf_image_src="/static/2013-12/campaign_images/webdr01/11/16/so-theres-a-new-original-character-in-mockingjay-1-19917-1386799086-8.jpg">
-      
-  </div>
-  
-
-
-            
-        </a>
-      
-    </div>
-
-  <hgroup>
-    
-      <h2 class="" style=""><a rel:gtrack_id="post/title" rel:gt_act="post/title" rel:gt_label="editor/kmallikarjuna" rel:gt_click="2" href="/kmallikarjuna/so-theres-a-new-original-character-in-mockingjay"><font><font>所以这是一个全新原装角色在“Mockingjay”</font></font></a></h2>
-  </hgroup>
-  
-  </header>
-
-  
-  
-  
-            <p class="description " style="">
-     <b><font><font>他的名字叫安，让我们八卦一下他像是一个完美的国会公民，我们是。</font></font></b><font><font>尾翼警报的</font></font><i><font><font>Mockingjay</font></font></i><font><font>的结局如果你还没有读过书。
-     
-        </font></font></p>
-   
-  
-
-      
-
-
-
-
-<p class="small-meta">
-  
-    <span class="generic-image icon"></span>
-    <a rel:gtrack_id="post/meta/user/name" rel:gt_act="post/username" rel:gt_label="editor/kmallikarjuna" rel:gt_click="3" class="username notranslate" href="/kmallikarjuna">Krutika Mallikarjuna</a>
-  
-    <span class="time-image icon"></span><span class="time-ago"><font><font>2小时前</font></font></span>
-  
-  
-            <a rel:gtrack_id="post/meta/responses/responses" rel:gt_act="post/responses" rel:gt_label="editor/kmallikarjuna" rel:gt_click="3" href="/kmallikarjuna/so-theres-a-new-original-character-in-mockingjay#responses" class="responses">
-        <span class="response-image icon"></span>
-        <span class="num"><font><font>30</font></font></span><font><font>回应
-      </font></font></a>  
-  
-  
-</p>
-  
-  
-
-  
-  
-  
- </article>
-</li>
-
-<li rel:gt_cat="[ttp]:feed" id="post-2813225" class=" post track bf_dom   has-like-button bf_cts-1-16 bf_cts  scrolled_past" rel:bf_cts="1:16:2813225:buzz" rel:ptool="true" rel:advertiser="0" rel:partner="0" rel:owner="lyapalater" rel:data="{&quot;buzz_id&quot;:&quot;2813225&quot;,&quot;type&quot;:&quot;super&quot;,&quot;uri&quot;:&quot;photos-that-define-michael-cera&quot;,&quot;form_id&quot;:&quot;20&quot;,&quot;verticals&quot;:[&quot;Celebrity&quot;,&quot;&quot;],&quot;category&quot;:&quot;Celebrity&quot;}">
- <article>
-    <header>
-  
-    
-    <div class="thumb-unit bf_dom">
-      
-        
-          <a rel:gtrack_id="post/photo" rel:gt_act="post/thumb" rel:gt_label="editor/lyapalater" rel:gt_click="1" href="/lyapalater/photos-that-define-michael-cera">
-        
-      
-
-      
-      
-
-        
-  <div style="position:relative;">
-   <img class="thumb bf_dom " style="" rel:bf_bucket="progload" src="http://s3-ak.buzzfeed.com/static/2013-12/campaign_images/webdr05/11/16/17-photos-that-define-michael-cera-1-32193-1386796518-3.jpg" width="125" height="83" alt="" rel:bf_image_src="/static/2013-12/campaign_images/webdr05/11/16/17-photos-that-define-michael-cera-1-32193-1386796518-3.jpg">
-      
-  </div>
-  
-
-
-            
-        </a>
-      
-    </div>
-
-  <hgroup>
-    
-      <h2 class="" style=""><a rel:gtrack_id="post/title" rel:gt_act="post/title" rel:gt_label="editor/lyapalater" rel:gt_click="2" href="/lyapalater/photos-that-define-michael-cera"><font><font>17照片定义迈克尔剑桥能源研究协会</font></font></a></h2>
-  </hgroup>
-  
-  </header>
-
-  
-  
-  
-            <p class="description " style="">
-     <b><font><font>他的存在</font></font><i><font><font>与</font></font></i><font><font>我们联系。</font></font></b>
-     
-        </p>
-   
-  
-
-      
-
-
-
-
-<p class="small-meta">
-  
-    <span class="generic-image icon"></span>
-    <a rel:gtrack_id="post/meta/user/name" rel:gt_act="post/username" rel:gt_label="editor/lyapalater" rel:gt_click="3" class="username notranslate" href="/lyapalater">Lauren Yapalater</a>
-  
-    <span class="time-image icon"></span><span class="time-ago"><font><font>2小时前</font></font></span>
-  
-  
-            <a rel:gtrack_id="post/meta/responses/responses" rel:gt_act="post/responses" rel:gt_label="editor/lyapalater" rel:gt_click="3" href="/lyapalater/photos-that-define-michael-cera#responses" class="responses">
-        <span class="response-image icon"></span>
-        <span class="num"><font><font>85</font></font></span><font><font>回应
-      </font></font></a>  
-  
-  
-</p>
-  
-  
-
-  
-  
-  
- </article>
-</li>
+            {% endfor %}
           </ul>
         </div>
       </div>
@@ -592,7 +151,7 @@
           </div>
           <div class="col-xs-12 col-md-4">
             <div class="Column2 section bf_dom ">
-              <div class="section sidebar_featured_unified" rel:gt_cat="[ttp]:middle-column/featured-vertical">
+              <div class="section sidebar_featured_unified">
                 <div id="big_stories_header" class="header">
                   <h1>
                     <font>
@@ -601,16 +160,17 @@
                   </h1>
                 </div>
                 <ul id="big_stories_container">
+                  {% for hot in hots.list %}
                   <li class="small-posts pinned bf_dom">
                     <div class="bf_dom bf_cts-5-1 bf_cts">
-                      <a href="/jennaguillaume/reactions-as-high-court-throws-out-same-sex-marriages">
-                        <img class="bf_dom pinned-image" src="http://s3-ak.buzzfeed.com/static/2013-12/campaign_images/webdr03/11/23/26-angry-reactions-as-australias-high-court-throw-1-21288-1386823135-12_wide.jpg" alt="26愤怒的反应作为澳大利亚高等法院抛出了同性婚姻">
+                      <a href="#">
+                        <img class="bf_dom pinned-image" src="{{ hot.cover }}" alt="{{ hot.title }}">
                       </a>
                       <h3>
-                        <a href="/jennaguillaume/reactions-as-high-court-throws-out-same-sex-marriages">
+                        <a href="#">
                           <span>
                             <font>
-                              <font>26愤怒的反应作为澳大利亚高等法院抛出了同性婚姻</font>
+                              <font>{{ hot.title }}</font>
                             </font>
                           </span>
                         </a>
@@ -618,18 +178,18 @@
                     </div>
                     <p class="small-meta">
                       <span class="generic-image icon"></span>
-                      <a class="username notranslate" href="/jennaguillaume">Jenna Guillaume</a>
+                      <a class="username notranslate" href="#">{{ hot.author_username }}</a>
                       <span class="time-image icon"></span>
                       <span class="time-ago">
                         <font>
-                          <font>一个小时前</font>
+                          <font>{{ hot.created|pretty_date }}</font>
                         </font>
                       </span>
-                      <a href="/jennaguillaume/reactions-as-high-court-throws-out-same-sex-marriages#responses" class="responses">
+                      <a href="#" class="responses">
                         <span class="response-image icon"></span>
                         <span class="num">
                           <font>
-                            <font>3</font>
+                            <font>{{ hot.comment_count }}</font>
                           </font>
                         </span>
                         <font>
@@ -638,129 +198,7 @@
                       </a>  
                     </p>
                   </li>
-
-                  <li class="small-posts pinned bf_dom   " rel:buzz_id="2813457" rel:data="{&quot;buzz_id&quot;:&quot;2813457&quot;,&quot;position&quot;:&quot;2&quot;,&quot;column&quot;:&quot;vertical&quot;}">
-  
-
-  <div class="bf_dom bf_cts-5-2 bf_cts" rel:data="{&quot;buzz_id&quot;:&quot;2813457&quot;}" rel:owner="evanmcsan" rel:bf_cts="5:2:2813457:buzz" rel:bf_bucket="track" track="{&quot;c&quot;:&quot;7BQ46G7&quot;,&quot;u&quot;:&quot;72DCFS7&quot;,&quot;buzz&quot;:&quot;pcccs-shameless-plan-to-take-over-the-world&quot;,&quot;user&quot;:&quot;evanmcsan&quot;,&quot;types&quot;:[],&quot;queries&quot;:[]}">
-    <a href="/evanmcsan/pcccs-shameless-plan-to-take-over-the-world" rel:gt_act="post/thumb" rel:gt_label="editor/evanmcsan" track="{&quot;c&quot;:&quot;7BQ46G7&quot;,&quot;u&quot;:&quot;72DCFS7&quot;,&quot;buzz&quot;:&quot;pcccs-shameless-plan-to-take-over-the-world&quot;,&quot;user&quot;:&quot;evanmcsan&quot;,&quot;types&quot;:[],&quot;queries&quot;:[]}">
-      <img class="bf_dom pinned-image" rel:bf_bucket="progload" src="http://s3-ak.buzzfeed.com/static/2013-12/campaign_images/webdr02/11/23/one-progressive-groups-shameless-plan-to-take-ove-1-15289-1386822148-14_wide.jpg" rel:bf_image_src="/static/2013-12/campaign_images/webdr02/11/23/one-progressive-groups-shameless-plan-to-take-ove-1-15289-1386822148-14_wide.jpg" alt="一进集团的无耻计划接管世界" data-pinit="registered">
-    </a>
-    <h3>
-      <a href="/evanmcsan/pcccs-shameless-plan-to-take-over-the-world" rel:gt_act="post/title" rel:gt_label="editor/evanmcsan" track="{&quot;c&quot;:&quot;7BQ46G7&quot;,&quot;u&quot;:&quot;72DCFS7&quot;,&quot;buzz&quot;:&quot;pcccs-shameless-plan-to-take-over-the-world&quot;,&quot;user&quot;:&quot;evanmcsan&quot;,&quot;types&quot;:[],&quot;queries&quot;:[]}"><span><font><font>一进集团的无耻计划接管世界</font></font></span></a>
-    </h3>
-  </div>
-  
-  
-  
-    
-      
-  
-  
-
-
-
-
-<p class="small-meta">
-  
-    <span class="generic-image icon"></span>
-    <a rel:gtrack_id="post/meta/user/name" rel:gt_act="post/username" rel:gt_label="editor/evanmcsan" rel:gt_click="3" class="username notranslate" href="/evanmcsan">Evan McMorris-Santoro</a>
-  
-    <span class="time-image icon"></span><span class="time-ago"><font><font>3小时前</font></font></span>
-  
-  
-            <a rel:gtrack_id="post/meta/responses/responses" rel:gt_act="post/responses" rel:gt_label="editor/evanmcsan" rel:gt_click="3" href="/evanmcsan/pcccs-shameless-plan-to-take-over-the-world#responses" class="responses">
-        <span class="response-image icon"></span>
-        <span class="num"><font><font>2</font></font></span><font><font>回应
-      </font></font></a>  
-  
-  
-</p>
-    
-
-</li>
-
-<li class="small-posts pinned bf_dom   " rel:buzz_id="2818948" rel:data="{&quot;buzz_id&quot;:&quot;2818948&quot;,&quot;position&quot;:&quot;3&quot;,&quot;column&quot;:&quot;vertical&quot;}">
-  
-
-  <div class="bf_dom bf_cts-5-3 bf_cts" rel:data="{&quot;buzz_id&quot;:&quot;2818948&quot;}" rel:owner="hunterschwarz" rel:bf_cts="5:3:2818948:buzz" rel:bf_bucket="track" track="{&quot;c&quot;:&quot;7BQXU57&quot;,&quot;u&quot;:&quot;71CWHF7&quot;,&quot;buzz&quot;:&quot;life-was-hell-for-the-fox-reporter-who-faced-jail-time-for-p&quot;,&quot;user&quot;:&quot;hunterschwarz&quot;,&quot;types&quot;:[],&quot;queries&quot;:[]}">
-    <a href="/hunterschwarz/life-was-hell-for-the-fox-reporter-who-faced-jail-time-for-p" rel:gt_act="post/thumb" rel:gt_label="editor/hunterschwarz" track="{&quot;c&quot;:&quot;7BQXU57&quot;,&quot;u&quot;:&quot;71CWHF7&quot;,&quot;buzz&quot;:&quot;life-was-hell-for-the-fox-reporter-who-faced-jail-time-for-p&quot;,&quot;user&quot;:&quot;hunterschwarz&quot;,&quot;types&quot;:[],&quot;queries&quot;:[]}">
-      <img class="bf_dom pinned-image" rel:bf_bucket="progload" src="http://s3-ak.buzzfeed.com/static/2013-12/campaign_images/webdr01/11/21/life-was-hell-for-the-fox-reporter-who-faced-jail-1-22365-1386815404-25_wide.jpg" rel:bf_image_src="/static/2013-12/campaign_images/webdr01/11/21/life-was-hell-for-the-fox-reporter-who-faced-jail-1-22365-1386815404-25_wide.jpg" alt="生活是地狱的福克斯记者们面对刑期为保护资源" data-pinit="registered">
-    </a>
-    <h3>
-      <a href="/hunterschwarz/life-was-hell-for-the-fox-reporter-who-faced-jail-time-for-p" rel:gt_act="post/title" rel:gt_label="editor/hunterschwarz" track="{&quot;c&quot;:&quot;7BQXU57&quot;,&quot;u&quot;:&quot;71CWHF7&quot;,&quot;buzz&quot;:&quot;life-was-hell-for-the-fox-reporter-who-faced-jail-time-for-p&quot;,&quot;user&quot;:&quot;hunterschwarz&quot;,&quot;types&quot;:[],&quot;queries&quot;:[]}"><span><font><font>生活是地狱的福克斯记者们面对刑期为保护资源</font></font></span></a>
-    </h3>
-  </div>
-  
-  
-  
-    
-      
-  
-  
-
-
-
-
-<p class="small-meta">
-  
-    <span class="generic-image icon"></span>
-    <a rel:gtrack_id="post/meta/user/name" rel:gt_act="post/username" rel:gt_label="editor/hunterschwarz" rel:gt_click="3" class="username notranslate" href="/hunterschwarz">Hunter Schwarz</a>
-  
-    <span class="time-image icon"></span><span class="time-ago"><font><font>2小时前</font></font></span>
-  
-  
-            <a rel:gtrack_id="post/meta/responses/responses" rel:gt_act="post/responses" rel:gt_label="editor/hunterschwarz" rel:gt_click="3" href="/hunterschwarz/life-was-hell-for-the-fox-reporter-who-faced-jail-time-for-p#responses" class="responses">
-        <span class="response-image icon"></span>
-        <span class="num"><font><font>9</font></font></span><font><font>响应
-      </font></font></a>  
-  
-  
-</p>
-    
-
-</li>
-
-<li class="small-posts pinned bf_dom   " rel:buzz_id="2819469" rel:data="{&quot;buzz_id&quot;:&quot;2819469&quot;,&quot;position&quot;:&quot;4&quot;,&quot;column&quot;:&quot;vertical&quot;}">
-  
-
-  <div class="bf_dom bf_cts-5-4 bf_cts" rel:data="{&quot;buzz_id&quot;:&quot;2819469&quot;}" rel:owner="passantino" rel:bf_cts="5:4:2819469:buzz" rel:bf_bucket="track" track="{&quot;c&quot;:&quot;7BR0NG7&quot;,&quot;u&quot;:&quot;734OFA7&quot;,&quot;buzz&quot;:&quot;international-space-station-cooling-system-fails-astronauts&quot;,&quot;user&quot;:&quot;passantino&quot;,&quot;types&quot;:[],&quot;queries&quot;:[]}">
-    <a href="/passantino/international-space-station-cooling-system-fails-astronauts" rel:gt_act="post/thumb" rel:gt_label="editor/passantino" track="{&quot;c&quot;:&quot;7BR0NG7&quot;,&quot;u&quot;:&quot;734OFA7&quot;,&quot;buzz&quot;:&quot;international-space-station-cooling-system-fails-astronauts&quot;,&quot;user&quot;:&quot;passantino&quot;,&quot;types&quot;:[],&quot;queries&quot;:[]}">
-      <img class="bf_dom pinned-image" rel:bf_bucket="progload" src="http://s3-ak.buzzfeed.com/static/2013-12/campaign_images/webdr02/11/19/international-space-station-cooling-system-fails--1-26764-1386807558-0_wide.jpg" rel:bf_image_src="/static/2013-12/campaign_images/webdr02/11/19/international-space-station-cooling-system-fails--1-26764-1386807558-0_wide.jpg" alt="国际空间站冷却系统失败;宇航员安全" data-pinit="registered">
-    </a>
-    <h3>
-      <a href="/passantino/international-space-station-cooling-system-fails-astronauts" rel:gt_act="post/title" rel:gt_label="editor/passantino" track="{&quot;c&quot;:&quot;7BR0NG7&quot;,&quot;u&quot;:&quot;734OFA7&quot;,&quot;buzz&quot;:&quot;international-space-station-cooling-system-fails-astronauts&quot;,&quot;user&quot;:&quot;passantino&quot;,&quot;types&quot;:[],&quot;queries&quot;:[]}"><span><font><font>国际空间站冷却系统失败;宇航员安全</font></font></span></a>
-    </h3>
-  </div>
-  
-  
-  
-    
-      
-  
-  
-
-
-
-
-<p class="small-meta">
-  
-    <span class="generic-image icon"></span>
-    <a rel:gtrack_id="post/meta/user/name" rel:gt_act="post/username" rel:gt_label="editor/passantino" rel:gt_click="3" class="username notranslate" href="/passantino">Jon Passantino</a>
-  
-    <span class="time-image icon"></span><span class="time-ago"><font><font>10小时前</font></font></span>
-  
-  
-            <a rel:gtrack_id="post/meta/responses/responses" rel:gt_act="post/responses" rel:gt_label="editor/passantino" rel:gt_click="3" href="/passantino/international-space-station-cooling-system-fails-astronauts#responses" class="responses">
-        <span class="response-image icon"></span>
-        <span class="num"><font><font>6</font></font></span><font><font>回应
-      </font></font></a>  
-  
-  
-</p>
-    
-
-</li>
+                  {% endfor %}
                 </ul>
               </div>
             </div>

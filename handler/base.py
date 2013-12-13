@@ -42,3 +42,31 @@ class BaseHandler(tornado.web.RequestHandler):
     def render_from_string(self, template_string, **template_vars):
         template = self.jinja2.from_string(template_string)
         return template.render(**template_vars)
+
+    @property
+    def user_model(self):
+        return self.application.user_model
+
+    @property
+    def post_model(self):
+        return self.application.post_model
+
+    @property
+    def head1_model(self):
+        return self.application.head1_model
+
+    @property
+    def head2_model(self):
+        return self.application.head2_model
+
+    @property
+    def std_model(self):
+        return self.application.std_model
+
+    @property
+    def hot_model(self):
+        return self.application.hot_model
+
+    @property
+    def comment_model(self):
+        return self.application.comment_model

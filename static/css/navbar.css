@@ -34,3 +34,8 @@ background: no-repeat url(/static/images/logo.png);
 margin: 10px 0px 10px 0px;
 width: 93px;
 }
+
+.container>.navbar-header {
+	margin-left: 15px;
+	margin-right: 5px;
+}
