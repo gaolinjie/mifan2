@@ -51,3 +51,15 @@ INSERT INTO `hot` VALUES (6, 19, '2013-12-13');
 INSERT INTO `hot` VALUES (7, 20, '2013-12-13');
 INSERT INTO `hot` VALUES (8, 21, '2013-12-13');
 INSERT INTO `hot` VALUES (9, 22, '2013-12-13');
+
+
+INSERT INTO `post` VALUES (23, '这张照片贾斯汀·比伯和威尔·史密斯是最喜欢的照片Instagram的2013年', 'http://s3-ak.buzzfeed.com/static/2013-12/campaign_images/webdr06/13/8/this-photo-of-justin-bieber-and-will-smith-was-th-1-26817-1386941438-7.jpg', '不要停止beliebing。', '', 1, 1, 0, '2013-12-13');
+INSERT INTO `post` VALUES (24, '5最Cringeworthy说唱歌曲从迪斯尼的“米奇Unrapped”', 'http://s3-ak.buzzfeed.com/static/2013-12/campaign_images/webdr01/12/21/the-5-most-cringeworthy-rap-songs-from-disneys-mi-1-6097-1386900717-0.jpg', '在90年代早期的米老鼠推出的说唱生涯......这是不漂亮。', '', 1, 1, 0, '2013-12-13');
+INSERT INTO `post` VALUES (25, '白宫鸣叫奥巴马举行签署启发优秀Photoshops', 'http://s3-ak.buzzfeed.com/static/2013-12/campaign_images/webdr02/12/17/white-house-tweet-of-obama-holding-sign-inspires--1-4992-1386888876-11.jpg', '互联网在其最好的。', '', 1, 1, 0, '2013-12-13');
+INSERT INTO `post` VALUES (26, '碧昂丝令世人瞩目随着新专辑在iTunes中', 'http://s3-ak.buzzfeed.com/static/2013-12/campaign_images/webdr07/13/9/beyonce-surprised-the-world-with-a-new-album-on-i-1-7541-1386944111-8.jpg', '早期的圣诞礼物QUEEN B！', '', 1, 1, 0, '2013-12-13');
+INSERT INTO `post` VALUES (27, '8杂志礼品指南，假设你是一个亿万富翁带领商报链接', 'http://s3-ak.buzzfeed.com/static/2013-12/campaign_images/webdr05/12/17/8-magazine-gift-guides-that-assume-youre-a-billio-1-14696-1386887629-40.jpg', '加10迪士尼主题双关语，以帮助你学习的总决赛，为兄弟的5个最好的校内工作，和8件事你学习的圣诞老人学校。', '', 1, 1, 0, '2013-12-13');
+INSERT INTO `std` VALUES (12, 23, '2013-12-13');
+INSERT INTO `std` VALUES (13, 24, '2013-12-13');
+INSERT INTO `std` VALUES (14, 25, '2013-12-13');
+INSERT INTO `std` VALUES (15, 26, '2013-12-13');
+INSERT INTO `std` VALUES (16, 27, '2013-12-13');
