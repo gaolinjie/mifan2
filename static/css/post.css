@@ -1,0 +1,233 @@
+.VerticalSection, body.Shift, body.Sports, body.Tech, body.Politics {
+background: url(http://buzzfeed.com/static/images/public/verticals/noise.png?v=201312161302);
+}
+
+.PageContainer {
+width: 990px;
+background: #fff;
+margin: 0 auto;
+padding: 0 15px;
+background-color: #FFF;
+position: relative;
+}
+.c {
+clear: both;
+float: none;
+}
+
+.section {
+float: left;
+width: 100%;
+margin-bottom: 15px;
+}
+
+.PageContent {
+
+background: #fff;
+}
+.PageContent {
+margin-top: 0px !important;
+}
+.Content {
+float: left;
+width: 625px;
+margin-top: 5px;
+margin-right: 25px;
+display: inline;
+}
+.Page {
+position: relative;
+margin: 0 auto;
+}
+.buzz.bf_dom {
+margin-bottom: 0;
+}
+.buzz {
+float: left;
+width: 100%;
+}
+.no-border {
+background: 0 !important;
+}
+.PermalinkPage .post2 {
+padding-bottom: 0;
+}
+.post2 {
+position: relative;
+list-style: none;
+}
+.post2 #post-title {
+clear: left;
+color: #333333;
+font-family: "ProximaNovaSemibold",Helvetica,Arial,sans-serif;
+font-size: 36px;
+font-weight: normal;
+line-height: 38px;
+margin: 10px 0;
+text-transform: none;
+letter-spacing: normal;
+}
+.post2 p.description {
+font-size: 17px;
+line-height: 23px;
+color: #333;
+font-family: "ProximaNovaRegular",Helvetica, Arial, sans-serif;
+margin: 0px 0px 11px 0px;
+}
+.post2 p.description b, .post2 p.description strong {
+font-family: "ProximaNovaSemibold", Helvetica, Arial, sans-serif;
+font-weight: normal;
+}
+.description span.buzz_datetime {
+display: block;
+margin-top: 4px;
+font-family: Arial,Helvetica,sans-serif;
+text-transform: none;
+letter-spacing: -.02em;
+padding-left: 0px;
+font-weight: normal;
+font-size: 10px;
+color: #999;
+}
+
+.container>.navbar-header {
+margin-left: 85px;
+}
+
+.navbar-nav.navbar-right:last-child {
+margin-right: 45px;
+}
+.post2 .user-bg {
+margin: 2px 0px 20px 0px;
+}
+.post2 .meta {
+overflow: hidden;
+font-family: Arial,Helvetica,sans-serif;
+}
+.post2 .user-info {
+border: none;
+margin: 0px 30px 5px 0px;
+padding-top: 0px;
+float: left;
+}
+.post2 .user-info a.user-avatar {
+clear: none;
+float: left;
+margin-right: 5px;
+height: 35px;
+width: 35px;
+}
+.post2 .user-info a.user-avatar img {
+height: 35px;
+width: 35px;
+}
+.post2 .user-info .user-info-info {
+float: left;
+}
+.post2 .meta .user-name {
+font-size: 14px;
+font-weight: bold;
+}
+.post2 .user-info .user-name {
+overflow: hidden;
+line-height: 21px;
+}
+.post2 .meta .author_title {
+font-size: 12px;
+color: #727272;
+}
+.post2 .user-info .author_title {
+display: block;
+width: 160px;
+line-height: 12px;
+}
+.horizontal-share-buttons.blue-bg {
+background-color: #f5fcfe;
+}
+.horizontal-share-buttons {
+border-top: 1px solid #dbdbdb;
+border-bottom: 1px solid #dbdbdb;
+padding: 8px 0px 0px 8px;
+}
+#buzz_sub_buzz {
+font-family: Arial, Helvetica, sans-serif;
+}
+#buzz_sub_buzz .buzz_superlist_item {
+clear: both;
+position: relative;
+padding: 20px 0px 20px 0px;
+margin: 0;
+}
+#buzz_sub_buzz .buzz_superlist_item .sub_buzz_content {
+padding: 0 0 3px 0;
+position: relative;
+line-height: 0;
+}
+.bottom_shares {
+padding: 25px 0;
+width: 625px;
+margin: 0 auto;
+}
+.bottom-share-buttons {
+height: 0px;
+}
+#next_on {
+margin: 10px auto;
+height: 125px;
+width: 625px;
+overflow: hidden;
+background: #F7F7F7;
+clear: both;
+float: none;
+}
+#next_on .leftPage {
+position: absolute;
+float: left;
+width: 355px;
+overflow: hidden;
+}
+#next_on.next_on_entertainment .vertical_title_sprite {
+background-position: 2px -312px;
+width: 109px;
+}
+#next_on .vertical_title_sprite {
+background: url(http://buzzfeed.com/static/images/public/homepage/homepage-sprite.png?v=201312161302);
+position: absolute;
+right: 3px;
+top: 3px;
+z-index: 2;
+display: block;
+height: 30px;
+}
+#next_on.next_on_entertainment .rightPage {
+padding-top: 5px;
+}
+#next_on .rightPage {
+float: right;
+padding: 10px 10px 10px 0;
+width: 250px;
+margin: 0 0 0 10px;
+}
+#next_on.next_on_entertainment .rightPage span {
+font-size: 13px;
+}
+#next_on .rightPage span {
+color: #7a7a7a;
+font: 16px/1.1 'ProximaNovaRegular',Arial,Helvetica,sans-serif;
+text-transform: uppercase;
+white-space: nowrap;
+}
+#next_on.next_on_entertainment .rightPage span.next_arrow {
+font: 17px arial,sans-serif;
+}
+#next_on .rightPage h3 {
+font-size: 18px;
+margin: 10px 0 0 0;
+font: normal 21px/23px 'ProximaNovaSemibold',Helvetica,Arial,sans-serif;
+color: #000;
+}
+#next_on .rightPage span {
+color: #7a7a7a;
+text-transform: uppercase;
+white-space: nowrap;
+}
