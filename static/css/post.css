@@ -3,7 +3,7 @@ background: url(http://buzzfeed.com/static/images/public/verticals/noise.png?v=2
 }
 
 .PageContainer {
-width: 990px;
+width: 1020px;
 background: #fff;
 margin: 0 auto;
 padding: 0 15px;
@@ -26,7 +26,7 @@ margin-bottom: 15px;
 background: #fff;
 }
 .PageContent {
-margin-top: 0px !important;
+margin-top: 20px;
 }
 .Content {
 float: left;
@@ -44,7 +44,7 @@ margin-bottom: 0;
 }
 .buzz {
 float: left;
-width: 100%;
+
 }
 .no-border {
 background: 0 !important;
@@ -166,7 +166,7 @@ line-height: 0;
 .bottom_shares {
 padding: 25px 0;
 width: 625px;
-margin: 0 auto;
+margin-bottom: 20px;
 }
 .bottom-share-buttons {
 height: 0px;
@@ -230,4 +230,301 @@ color: #000;
 color: #7a7a7a;
 text-transform: uppercase;
 white-space: nowrap;
+}
+#social-actions {
+padding: 5px 0 0 0;
+border-top: 1px solid #eee;
+}
+.section {
+float: left;
+width: 100%;
+margin-bottom: 15px;
+}
+.SocialActions {
+position: relative;
+
+margin: 10px 0 10px;
+
+}
+.social-actions-hybrid .badge-voting {
+width: 630px;
+}
+.social-actions .badge-voting {
+margin-right: 10px;
+margin-top: 5px;
+}
+.social-buttons {
+float: left;
+padding: 0 4px 0 0;
+}
+.left {
+clear: none;
+
+}
+.social-actions .badge-voting #reactions-normal {
+width: auto;
+padding-right: 15px;
+padding-bottom: 5px;
+float: left;
+clear: both;
+margin: 10px 0;
+}
+.SocialActions .social-buttons h5 {
+text-transform: uppercase;
+font: bold 11px Arial,sans-serif;
+}
+h5 {
+font-weight: bold!important;
+font-family: Arial, Helvetica, sans-serif!important;
+margin-bottom: 5px!important;
+}
+.social-actions .badge-voting ul {
+display: inline;
+}
+#reactions-normal ul.reactions li {
+float: left;
+margin: 1px 1px 2px 0px;
+display: inline-block;
+}
+.social-actions .badge-voting li {
+
+padding: 0;
+line-height: 9px;
+}
+.social-buttons li {
+
+vertical-align: top;
+}
+
+.social-actions .badge-voting .reactions_one li a {
+display: inline-block;
+white-space: nowrap;
+border-bottom: 1px solid #b2b382;
+border-right: 1px solid #d9d9a0;
+
+font: 13px/22px 'ProximaNovaBold', Arial, Helvetica, sans-serif;
+color: #222;
+text-align: center;
+text-transform: uppercase;
+background: #FE0;
+border-radius: 3px;
+margin: 1px 5px 0 0;
+letter-spacing: 0px;
+}
+.social-actions-hybrid .badge-voting li a {
+
+width: auto!important;
+}
+.social-actions .reactions_one li a.vote-love_or_hate span.heart, .social-actions .reactions_two li a.vote-love_or_hate span.heart, .social-actions .reaction_control_heart li a.vote-love_or_hate span.heart {
+display: block;
+width: 19px;
+height: 16px;
+background: url(http://buzzfeed.com/static/images/public/social/lovehate-16_no_bg.png?v=201312161302);
+}
+.badge-vote-count {
+display: block;
+text-align: center;
+font: bold 12px arial,sans-serif;
+padding-top: 4px;
+color: #888;
+}
+.social-actions .badge-voting .reactions_one li a {
+display: inline-block;
+white-space: nowrap;
+border-bottom: 1px solid #b2b382;
+border-right: 1px solid #d9d9a0;
+padding: 2px 9px 1px !important;
+font: 13px/22px 'ProximaNovaBold', Arial, Helvetica, sans-serif;
+color: #222;
+text-align: center;
+text-transform: uppercase;
+background: #FE0;
+border-radius: 3px;
+margin: 1px 5px 0 0;
+letter-spacing: 0px;
+}
+.social-actions-hybrid .badge-voting li a {
+
+width: auto!important;
+}
+.social-actions .reactions_one li.hate a.vote-love_or_hate span.heart, .social-actions .reactions_two li.hate a.vote-love_or_hate span.heart, .social-actions .reaction_control_heart li.hate a.vote-love_or_hate span.heart {
+background-position: -19px 0px;
+}
+.social-actions .reactions_one li a.vote-love_or_hate span.heart, .social-actions .reactions_two li a.vote-love_or_hate span.heart, .social-actions .reaction_control_heart li a.vote-love_or_hate span.heart {
+display: block;
+width: 19px;
+height: 16px;
+background: url(http://buzzfeed.com/static/images/public/social/lovehate-16_no_bg.png?v=201312161302);
+}
+.social-actions .reactions_one li a.vote-love_or_hate {
+padding: 4px 8px 5px 8px !important;
+}
+.social-actions .badge-voting .reactions_one li a:hover {
+color: #ffffff;
+background: #07e;
+}
+.badge_heart li.love a:hover, .badge_heart li.hate a:hover {
+background: #07e !important;
+}
+
+/* footer */
+.simple-footer {
+float: left;
+width: 100%;
+padding: 20px 0;
+}
+.PageFooter {
+border-top: 2px solid #ccc;
+background: #eee;
+margin: 100px 0 20px 0;
+
+}
+.simple-footer-container {
+padding: 0 30px;
+}
+#nav_menu_more .made-in-nyc, .simple-footer .made-in-nyc {
+float: right;
+}
+.made-in-nyc {
+width: 46px;
+height: 46px;
+display: inline-block;
+background: url(http://buzzfeed.com/static/images/global/unified_sprite.png?v=201312161302) no-repeat -535px -497px;
+}
+.PageFooter ul li {
+float: none;
+line-height: 170%;
+}
+.footer-main-menu li {
+font-family: 'ProximaNovaSemibold', Helvetica, Arial, sans-serif;
+font-size: 16px;
+text-transform: uppercase;
+margin: 0 10px 10px 0;
+}
+.footer-main-menu li, .footer-sub-menu li {
+display: inline-block;
+}
+.PageFooter ul li {
+float: none;
+line-height: 170%;
+}
+.footer-sub-menu li {
+font-family: 'ProximaNovaRegular', Helvetica, Arial, sans-serif;
+color: #999;
+font-size: 13px;
+margin: 0 10px 0 0;
+}
+.footer-sub-menu li a {
+color: #666;
+}
+
+
+/* column2 */
+.PermalinkPage .Column2 {
+padding-top: 0;
+}
+.TwoColumns .Column2 {
+float: right;
+width: 336px;
+
+}
+.Column2 .section, .Column2 .featured_section.dfp_bigstory {
+padding: 0px;
+width: 336px;
+margin-bottom: 0;
+}
+.Column2 .section {
+float: left;
+
+background: #fff;
+}
+.vertical-info-banner {
+position: relative !important;
+float: left;
+background: #000;
+color: #fff;
+
+padding: 2px 0px 2px 5px;
+margin: 0px 0px 20px 0px;
+font-size: 17px;
+font-family: ProximaNovaSemiBold, Arial, Helvetica, sans-serif;
+}
+.vertical-info-banner, .vertical-info-banner .text, .BF_WIDGET.SI_Widget .vertical-info-banner, .vertical-info-banner .text {
+width: 331px;
+}
+.vertical-info-banner .text {
+position: relative;
+display: block;
+z-index: 10;
+white-space: nowrap;
+overflow-x: hidden;
+text-overflow: ellipsis;
+}
+.vertical-info-banner, .vertical-info-banner .text, .BF_WIDGET.SI_Widget .vertical-info-banner, .vertical-info-banner .text {
+width: 335px;
+}
+.vertical-info-banner .notch {
+position: absolute !important;
+bottom: -8px;
+left: 0;
+margin: 0;
+border-top: 10px solid #000;
+border-left: 10px solid #000;
+border-right: 10px solid transparent;
+border-bottom: 10px solid transparent;
+padding: 0;
+width: 0;
+height: 0;
+font-size: 0;
+line-height: 0;
+_border-right-color: #000;
+_border-left-color: #000;
+_filter: chroma(color=#000);
+}
+.content {
+padding-top: 1px;
+}
+.post {
+position: relative;
+float: left;
+xxxbackground: url(../images/global/lines/ccc.png?v=201312161302) top left repeat-x;
+ie6: ;
+display: inline;
+}
+.sidebar-post {
+margin-bottom: 25px;
+}
+.Content .post .thumb-unit, .post .thumb {
+position: relative;
+float: left;
+}
+.sidebar-post-wide img {
+width: 336px;
+height: 119px;
+margin-bottom: 7px;
+}
+li:first-child .editor-admin {
+top: 10px;
+}
+.qe {
+position: absolute;
+left: 0px;
+
+visibility: hidden;
+width: 16px;
+height: 16px;
+overflow: hidden;
+background: url(../images/public/icons/admin.png?v=201312161302);
+cursor: pointer;
+}
+.sidebar-post h2 {
+font: normal 19px/21px "ProximaNovaSemibold",Helvetica,Arial,sans-serif !important;
+display: inline-block;
+}
+.Column2 .post h2 a {
+color: #07e;
+}
+
+.PageContainer .Column2 {
+margin-left: 30px;
 }
