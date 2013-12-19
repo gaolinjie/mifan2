@@ -528,3 +528,229 @@ color: #07e;
 .PageContainer .Column2 {
 margin-left: 30px;
 }
+
+
+#related-links {
+position: relative;
+}
+.related-links-full {
+clear: both;
+display: block;
+float: none;
+width: 100%;
+padding-top: 1px !important;
+margin-bottom: 10px;
+background: url(http://s3-ak.buzzfed.com/static/images/global/lines/aaa.png?v=201312181508) 0 0 repeat-x;
+}
+.related-links-full h2 {
+padding-bottom: 3px;
+text-transform: uppercase;
+font-family: arial,helvetica,sans-serif;
+margin-top: 10px;
+font-size: 12px;
+font-weight: bold;
+}
+
+
+
+.box_gray {
+background: #F5F5F5;
+}
+
+.box {
+
+padding: 2px;
+margin: 0 0 20px 0;
+
+}
+
+
+#replies .total {
+padding: 0 10px 6px 10px;
+border-bottom: 1px solid #DDD;
+color: #999;
+margin: 0 -10px;
+}
+
+#replies .reply {
+border-bottom: 1px solid #DDD;
+padding: 8px 10px;
+margin: 0 -10px;
+background: #FFF;
+}
+#replies .reply .face {
+padding-right: 8px;
+width: 48px;
+margin-left: 0;
+}
+
+.pull-left {
+float: left;
+}
+
+#replies .reply .infos {
+padding-left: 58px;
+}
+#replies .reply .info {
+font-size: 12px;
+color: #bbb;
+height: 20px;
+}
+#replies .reply .info {
+font-size: 12px;
+color: #bbb;
+}
+#replies .reply .info .name a {
+color: #888;
+text-decoration: none;
+font-weight: bold;
+margin-right: 8px;
+}
+#replies .reply .info {
+font-size: 12px;
+color: #bbb;
+}
+#replies .reply .info .time a.reply-floor {
+margin-right: 0;
+color: #bbb;
+text-decoration: none;
+}
+abbr[title] {
+border: 0;
+cursor: default;
+}
+
+abbr[title] {
+border-bottom: 1px dotted #ddd;
+
+}
+#replies .reply .info .opts {
+float: right;
+text-align: right;
+}
+#replies .reply .info .opts a {
+margin-left: 5px;
+}
+
+#replies .reply .info a:link, #replies .reply .info a:visited {
+color: #999;
+}
+#replies .reply .info .opts i.icon {
+margin-bottom: -1px;
+}
+16167media="screen"
+.icon {
+display: inline-block;
+transition-property: background-position;
+transition-duration: 0.5s;
+-moz-transition-property: background-position;
+-moz-transition-duration: 0.5s;
+-webkit-transition-property: background-position;
+-webkit-transition-duration: 0.5s;
+}
+16167media="screen"
+.small_like {
+
+width: 12px;
+height: 12px;
+background: url("http://l.ruby-china.org/assets/sprites/small-de663733ce4361181155e442bdc62299.png") 0px -120px no-repeat;
+}
+#replies .reply .info a:link, #replies .reply .info a:visited {
+color: #999;
+}
+#replies .reply .info a.edit {
+display: none;
+}
+
+#replies .reply .info .opts a {
+margin-left: 5px;
+}
+
+#replies .reply .info a:link, #replies .reply .info a:visited {
+color: #999;
+}
+
+#replies .reply .info a:link, #replies .reply .info a:visited {
+color: #999;
+}
+
+.icon {
+
+transition-property: background-position;
+transition-duration: 0.5s;
+-moz-transition-property: background-position;
+-moz-transition-duration: 0.5s;
+-webkit-transition-property: background-position;
+-webkit-transition-duration: 0.5s;
+}
+
+.small_edit {
+
+width: 12px;
+height: 12px;
+background: url("http://l.ruby-china.org/assets/sprites/small-de663733ce4361181155e442bdc62299.png") 0px -72px no-repeat;
+}
+#replies .reply .info .opts a {
+margin-left: 5px;
+}
+16167media="screen"
+#replies .reply .info a:link, #replies .reply .info a:visited {
+color: #999;
+}
+16167media="screen"
+#replies .reply .info a:link, #replies .reply .info a:visited {
+color: #999;
+}
+16167media="screen"
+.icon {
+display: inline-block;
+transition-property: background-position;
+transition-duration: 0.5s;
+-moz-transition-property: background-position;
+-moz-transition-duration: 0.5s;
+-webkit-transition-property: background-position;
+-webkit-transition-duration: 0.5s;
+}
+16167media="screen"
+.small_reply {
+
+width: 12px;
+height: 12px;
+background: url("http://l.ruby-china.org/assets/sprites/small-de663733ce4361181155e442bdc62299.png") 0px -168px no-repeat;
+}
+.topics .topic .body, #replies .reply .body, .markdown_body {
+position: relative;
+line-height: 1.8em;
+font-size: 14px;
+text-overflow: ellipsis;
+word-wrap: break-word;
+}
+
+#replies .reply .body {
+text-align: left;
+margin-top: 5px;
+}
+.topics .topic .body p:last-of-type, #replies .reply .body p:last-of-type, .markdown_body p:last-of-type {
+margin-bottom: 0;
+}
+
+.topics .topic .body p, #replies .reply .body p, .markdown_body p {
+font-size: 14px;
+
+line-height: 1.6em;
+}
+
+p {
+margin: 0 0 9px;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+#replies .total {
+padding: 0 10px 6px 10px;
+border-bottom: 1px solid #DDD;
+color: #999;
+margin: 0 -10px;
+}
+
+
+
