@@ -559,7 +559,7 @@ background: #F5F5F5;
 
 .box {
 
-padding: 2px;
+padding: 0 10px;
 margin: 0 0 20px 0;
 
 }
@@ -574,7 +574,7 @@ margin: 0 -10px;
 
 #replies .reply {
 border-bottom: 1px solid #DDD;
-padding: 8px 10px;
+padding: 8px 0px;
 margin: 0 -10px;
 background: #FFF;
 }
