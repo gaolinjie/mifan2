@@ -21,6 +21,7 @@ import tornado.web
 
 import handler.index
 import handler.post
+import handler.community
 
 from tornado.options import define, options
 from lib.loader import Loader
@@ -50,6 +51,7 @@ class Application(tornado.web.Application):
 
         handlers = [
             (r"/", handler.index.IndexHandler),
+            (r"/community", handler.community.CommunityHandler),
             (r"/p/(\d+)", handler.post.PostHandler),
 
             (r"/(favicon\.ico)", tornado.web.StaticFileHandler, dict(path = settings["static_path"])),
