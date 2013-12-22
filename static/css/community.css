@@ -21,7 +21,7 @@ float: left;
 background: #fff;
 }
 .PageContent {
-margin-top: 0px !important;
+margin-top: 10px !important;
 }
 .TwoColumns .Column1 {
 width: 625px;
@@ -180,7 +180,7 @@ padding-top: 1px;
 margin-bottom: 10px;
 }
 .Posts {
-width: 625px;
+width: 635px;
 margin-top: 5px;
 padding-left: 0;
 float: left;
@@ -249,9 +249,7 @@ float: left;
 font-size: 10px;
 margin-bottom: 0px;
 }
-p.small-meta .generic-image {
-margin: 1px 5px 0px 0px;
-}
+
 p.small-meta .icon {
 background: url(http://buzzfeed.com/static/images/public/icons/small_meta_icons.png?v=201312191433);
 width: 12px !important;
@@ -378,9 +376,7 @@ overflow: hidden;
 .community-not-inline .user-reaction-social .share-icon {
 margin: 2px 0 0 1px;
 }
-.user-reaction-social .buzz-facebook-share {
-background-position: 0px -24px;
-}
+
 .user-reaction-social .share-icon {
 width: 24px;
 height: 24px;
@@ -390,6 +386,9 @@ background: url(http://buzzfeed.com/static/images/public/icons/large-share-sprit
 }
 .community-not-inline .user-reaction-social .share-icon {
 margin: 2px 0 0 1px;
+}
+.user-reaction-social .buzz-facebook-share {
+background-position: 0px -24px;
 }
 .user-reaction-social .buzz-pinterest-share {
 background-position: 0px -96px;
@@ -502,7 +501,7 @@ position: relative !important;
 float: left;
 background: #000;
 color: #fff;
-height: 20px;
+height: 28px;
 padding: 2px 0px 2px 5px;
 margin: 0px 0px 20px 0px;
 font-size: 17px;
@@ -729,3 +728,55 @@ display: inline-block;
 color: #666;
 }
 
+.Column1 .std-posts .post {
+padding: 15px 0 10px 125px;
+}
+p.small-meta .generic-image {
+margin: 1px 5px 0px 0px;
+}
+p.small-meta .time-image {
+background-position: 0px -12px;
+}
+.paging span {
+background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#d6d6d6));
+background-image: -moz-linear-gradient(top, #fff, #d6d6d6);
+background-color: #eee;
+color: #999;
+border: 1px solid #c6c6c6;
+}
+.reaction-btn:hover, .comment-btn:hover {
+color: #ffffff;
+background: #07e;
+}
+.vertical-info-banner .text {
+position: relative;
+display: block;
+z-index: 10;
+white-space: nowrap;
+overflow-x: hidden;
+text-overflow: ellipsis;
+}
+.vertical-info-banner, .vertical-info-banner .text, .BF_WIDGET.SI_Widget .vertical-info-banner, .vertical-info-banner .text {
+width: 331px;
+}
+#splash_01 #splash-container #splash-overlay .title:hover, #splash_01.no-touch #splash-container #splash-overlay .title:hover {
+background: rgb(0, 119, 238);
+color: #fff;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+filter: alpha(opacity=80);
+-moz-opacity: 0.8;
+-khtml-opacity: 0.8;
+opacity: 0.8;
+}
+.user-reaction-social .share-icon:hover {
+opacity: 0.65;
+filter: alpha(opacity=65);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+-moz-opacity: 0.65;
+-khtml-opacity: 0.65;
+}
+.post .thumb-unit:hover {
+opacity: 0.95;
+-moz-opacity: 0.95;
+filter: alpha(opacity=95);
+}
