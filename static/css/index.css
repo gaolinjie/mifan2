@@ -840,6 +840,57 @@ margin-bottom: 0px;
 }
 
 .homepage-columns {
-	padding-top: 10px;
+	padding-top: 20px;
 }
 
+
+/* footer */
+.simple-footer {
+float: left;
+width: 100%;
+padding: 20px 0;
+}
+.PageFooter {
+border-top: 2px solid #ccc;
+background: #eee;
+margin: 100px 0 20px 0;
+
+}
+.simple-footer-container {
+padding: 0 30px;
+}
+#nav_menu_more .made-in-nyc, .simple-footer .made-in-nyc {
+float: right;
+}
+.made-in-nyc {
+width: 46px;
+height: 46px;
+display: inline-block;
+background: url(http://buzzfeed.com/static/images/global/unified_sprite.png?v=201312161302) no-repeat -535px -497px;
+}
+.PageFooter ul li {
+float: none;
+line-height: 170%;
+}
+.footer-main-menu li {
+font-family: 'ProximaNovaSemibold', Helvetica, Arial, sans-serif;
+font-size: 16px;
+text-transform: uppercase;
+margin: 0 10px 10px 0;
+}
+.footer-main-menu li, .footer-sub-menu li {
+display: inline-block;
+}
+.PageFooter ul li {
+float: none;
+line-height: 170%;
+}
+.footer-sub-menu li {
+font-family: 'ProximaNovaRegular', Helvetica, Arial, sans-serif;
+color: #999;
+font-size: 13px;
+margin: 0 10px 0 0;
+}
+.footer-sub-menu li a {
+color: #666;
+}
