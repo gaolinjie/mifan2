@@ -254,6 +254,7 @@ background: 0;
 }
 
 .Column1 .std-posts .post {;
+width: 600px;
 padding: 15px 0 10px 140px;
 border-bottom: 1px solid #eee;
 margin: 0;
