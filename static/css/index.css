@@ -244,6 +244,7 @@ padding-top: 0px;
 
 .std-posts {
 position: relative;
+padding-left: 15px;
 }
 ul, ol {
 list-style-type: none;
@@ -254,8 +255,8 @@ background: 0;
 }
 
 .Column1 .std-posts .post {;
-width: 600px;
-padding: 15px 0 10px 150px;
+width: 580px;
+padding: 15px 0 10px 135px;
 border-bottom: 1px solid #eee;
 margin: 0;
 position: relative;
@@ -351,7 +352,7 @@ color: #fe4e5b;
 
 
 /* Column2 */
-.homepage-columns .Column2, .homepage-columns .Column2 .section, .homepage-columns .Column2 .sidebar_featured_unified ul li, .homepage-columns .bf-item {
+.page-columns .Column2, .page-columns .Column2 .section, .page-columns .Column2 .sidebar_featured_unified ul li, .page-columns .bf-item {
 width: 340px!important;
 }
 
@@ -377,7 +378,7 @@ position: relative;
 float: left;
 }
 
-.homepage-columns .Column2 .pinned-image, .homepage-columns .bf-image-bigstory {
+.page-columns .Column2 .pinned-image, .page-columns .bf-image-bigstory {
 width: 340px !important;
 height: 120px !important;
 }
@@ -412,7 +413,7 @@ float: left;
 position: relative;
 }
 
-.homepage-columns .Column3 .section, .homepage-columns .Column3 .footer, .homepage-columns .Column3 .content, .homepage-columns .Column3, .homepage-columns .hot_list ol li .image-wrapper {
+.page-columns .Column3 .section, .page-columns .Column3 .footer, .page-columns .Column3 .content, .page-columns .Column3, .page-columns .hot_list ol li .image-wrapper {
 width: 205px !important;
 }
 
@@ -582,7 +583,7 @@ font-size: 14px;
 padding: 10px 0px;
 margin-top: 25px;
 }
-.homepage-columns .Column3 .section, .homepage-columns .Column3 .footer, .homepage-columns .Column3 .content, .homepage-columns .Column3, .homepage-columns .hot_list ol li .image-wrapper {
+.page-columns .Column3 .section, .page-columns .Column3 .footer, .page-columns .Column3 .content, .page-columns .Column3, .page-columns .hot_list ol li .image-wrapper {
 width: 205px !important;
 }
 .hot_homepage_block .block_header {
@@ -605,7 +606,7 @@ background: url(http://buzzfeed.com/static/images/public/videopage/video_header.
 height: 50px;
 width: 205px;
 }
-.homepage-columns .Column3 .section, .homepage-columns .Column3 .footer, .homepage-columns .Column3 .content, .homepage-columns .Column3, .homepage-columns .hot_list ol li .image-wrapper {
+.page-columns .Column3 .section, .page-columns .Column3 .footer, .page-columns .Column3 .content, .page-columns .Column3, .page-columns .hot_list ol li .image-wrapper {
 width: 205px !important;
 }
 .Column3 .section, .Column3 .footer, .Column3 .content {
@@ -634,7 +635,7 @@ top: 0px;
 background: #000;
 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 }
-.homepage-columns .Column3 .section, .homepage-columns .Column3 .footer, .homepage-columns .Column3 .content, .homepage-columns .Column3, .homepage-columns .hot_list ol li .image-wrapper {
+.page-columns .Column3 .section, .page-columns .Column3 .footer, .page-columns .Column3 .content, .page-columns .Column3, .page-columns .hot_list ol li .image-wrapper {
 width: 205px !important;
 }
 .hot_list ol li .image-wrapper {
@@ -896,7 +897,7 @@ body {
 background: url(http://buzzfeed.com/static/images/public/verticals/noise.png?v=201312161302);
 }
 
-.content {
+.main {
 padding-top: 10px;
 background: #fff;
 }

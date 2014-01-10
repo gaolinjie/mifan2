@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>米饭</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+
+  <!-- mifan css -->
+  <link rel="stylesheet" href="/static/css/mifan.css">
+  <link rel="stylesheet" href="/static/css/navbar.css">
+  <link rel="stylesheet" href="/static/css/index.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <header class="navbar navbar-inverse mf-nav" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="../" class="navbar-brand"></a>
+      </div>
+      <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="../getting-started">新闻</a>
+          </li>
+          <li>
+            <a href="../css">娱乐</a>
+          </li>
+          <li>
+            <a href="../components">生活</a>
+          </li>
+          <li>
+            <a href="../javascript">视频</a>
+          </li>
+          <li>
+            <a href="../customize">更多</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="../about">登入</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-columns">
+    <div class="left-column-group bf_dom">
+      <div class="container main">
+        <div class="row">
+          {% block main %}{% endblock %}
+        </div>
+
+        <footer class="PageFooter footer simple-footer">
+      <div class="simple-footer-container">
+        <a rel:gt_act="made-in-nyc" class="made-in-nyc" href="http://wearemadeinny.com/"></a>
+
+        <ul class="footer-main-menu">
+          <li>
+            <a rel:gt_act="advertise" href="/advertise">
+              <font>
+                <font>广告</font>
+              </font>
+            </a>
+          </li>
+          <li>
+            <a rel:gt_act="jobs" href="/about/jobs">
+              <font>
+                <font>工作机会</font>
+              </font>
+            </a>
+          </li>
+          <li>
+            <a rel:gt_act="mobile" href="/tools/mobile-ios">
+              <font>
+                <font>移动</font>
+              </font>
+            </a>
+          </li>
+          <li>
+            <a rel:gt_act="newsletters" href="/tools/email">
+              <font>
+                <font>简讯</font>
+              </font>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-sub-menu">
+          <li>
+            <a rel:gt_act="about" href="/about">
+              <font>
+                <font>关于</font>
+              </font>
+            </a>
+          </li>
+          <li>
+            <a rel:gt_act="press" href="/press">
+              <font>
+                <font>按</font>
+              </font>
+            </a>
+          </li>
+          <li>
+            <a rel:gt_act="rss" href="/tools/more">
+              <font>
+                <font>RSS</font>
+              </font>
+            </a>
+          </li>
+          <li>
+            <a rel:gt_act="privacy" href="/about/privacy">
+              <font>
+                <font>法律</font>
+              </font>
+            </a>
+          </li>
+          <li>
+            <a rel:gt_act="faq" href="/help/faq">
+              <font>
+                <font>帮助</font>
+              </font>
+            </a>
+          </li>
+          <li>
+            <a rel:gt_act="contact" href="/about/contact">
+              <font>
+                <font>联系</font>
+              </font>
+            </a>
+          </li>
+          <li>
+            <font>
+              <font>©2013 BuzzFeed，公司</font>
+            </font>
+          </li>
+        </ul>
+      </div>
+    </footer>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</body>
+</html>
