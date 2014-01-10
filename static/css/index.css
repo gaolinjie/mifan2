@@ -914,7 +914,7 @@ margin: 0;
 }
 
 .entry-name {
-font-size: 18px;
+font-size: 20px;
 line-height: 20px;
 display: block;
 font-weight: 700;
@@ -933,13 +933,13 @@ color: #333;
 position: relative;
 margin-top: 5px;
 font-size: 12px;
-padding: 7px 0 13px;
+padding: 7px 0 5px;
 }
 .entry-meta a {
 color: #666;
 }
 .entry-content {
-font-size: 14px;
+font-size: 15px;
 line-height: 1.8em;
 margin: 0;
 clear: both;
