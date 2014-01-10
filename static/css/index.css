@@ -255,7 +255,7 @@ background: 0;
 
 .Column1 .std-posts .post {;
 width: 600px;
-padding: 15px 0 10px 140px;
+padding: 15px 0 10px 150px;
 border-bottom: 1px solid #eee;
 margin: 0;
 position: relative;
@@ -826,7 +826,7 @@ text-transform: uppercase;
 }
 
 .Column2 {
-	margin-left: -22px;
+	margin-left: -32px;
 }
 
 
@@ -838,10 +838,6 @@ width: 355px;
 float: left;
 font-size: 10px;
 margin-bottom: 0px;
-}
-
-.homepage-columns {
-	padding-top: 20px;
 }
 
 
@@ -894,4 +890,13 @@ margin: 0 10px 0 0;
 }
 .footer-sub-menu li a {
 color: #666;
+}
+
+body {
+background: url(http://buzzfeed.com/static/images/public/verticals/noise.png?v=201312161302);
+}
+
+.content {
+padding-top: 10px;
+background: #fff;
 }
