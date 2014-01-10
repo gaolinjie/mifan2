@@ -65,3 +65,8 @@ padding-left: 0px;
 .navbar {
 border-radius: 0px;
 }
+
+body {
+font: 14px Arial,Helvetica,sans-serif;
+color: #333;
+}
